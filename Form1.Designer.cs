@@ -76,135 +76,135 @@ namespace Espeleta_Tic_Tac_Toe
             // 
             this.slot9.BackColor = System.Drawing.Color.White;
             this.slot9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot9.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot9.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot9.Location = new System.Drawing.Point(282, 281);
             this.slot9.Name = "slot9";
             this.slot9.Size = new System.Drawing.Size(140, 140);
             this.slot9.TabIndex = 8;
-            this.slot9.Text = "9";
             this.slot9.UseVisualStyleBackColor = false;
             // 
             // slot8
             // 
             this.slot8.BackColor = System.Drawing.Color.White;
             this.slot8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot8.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot8.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot8.Location = new System.Drawing.Point(142, 281);
             this.slot8.Name = "slot8";
             this.slot8.Size = new System.Drawing.Size(140, 140);
             this.slot8.TabIndex = 7;
-            this.slot8.Text = "8";
             this.slot8.UseVisualStyleBackColor = false;
             // 
             // slot7
             // 
             this.slot7.BackColor = System.Drawing.Color.White;
             this.slot7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot7.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot7.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot7.Location = new System.Drawing.Point(2, 281);
             this.slot7.Name = "slot7";
             this.slot7.Size = new System.Drawing.Size(140, 140);
             this.slot7.TabIndex = 6;
-            this.slot7.Text = "7";
             this.slot7.UseVisualStyleBackColor = false;
             // 
             // slot6
             // 
             this.slot6.BackColor = System.Drawing.Color.White;
             this.slot6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot6.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot6.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot6.Location = new System.Drawing.Point(282, 141);
             this.slot6.Name = "slot6";
             this.slot6.Size = new System.Drawing.Size(140, 140);
             this.slot6.TabIndex = 5;
-            this.slot6.Text = "6";
             this.slot6.UseVisualStyleBackColor = false;
             // 
             // slot5
             // 
             this.slot5.BackColor = System.Drawing.Color.White;
             this.slot5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot5.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot5.Location = new System.Drawing.Point(142, 141);
             this.slot5.Name = "slot5";
             this.slot5.Size = new System.Drawing.Size(140, 140);
             this.slot5.TabIndex = 4;
-            this.slot5.Text = "5";
             this.slot5.UseVisualStyleBackColor = false;
             // 
             // slot4
             // 
             this.slot4.BackColor = System.Drawing.Color.White;
             this.slot4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot4.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot4.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot4.Location = new System.Drawing.Point(2, 141);
             this.slot4.Name = "slot4";
             this.slot4.Size = new System.Drawing.Size(140, 140);
             this.slot4.TabIndex = 3;
-            this.slot4.Text = "4";
             this.slot4.UseVisualStyleBackColor = false;
             // 
             // slot3
             // 
             this.slot3.BackColor = System.Drawing.Color.White;
             this.slot3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot3.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot3.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot3.Location = new System.Drawing.Point(282, 1);
             this.slot3.Name = "slot3";
             this.slot3.Size = new System.Drawing.Size(140, 140);
             this.slot3.TabIndex = 2;
-            this.slot3.Text = "3";
             this.slot3.UseVisualStyleBackColor = false;
             // 
             // slot2
             // 
             this.slot2.BackColor = System.Drawing.Color.White;
             this.slot2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot2.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot2.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot2.Location = new System.Drawing.Point(142, 1);
             this.slot2.Name = "slot2";
             this.slot2.Size = new System.Drawing.Size(140, 140);
             this.slot2.TabIndex = 1;
-            this.slot2.Text = "2";
             this.slot2.UseVisualStyleBackColor = false;
             // 
             // slot1
             // 
             this.slot1.BackColor = System.Drawing.Color.White;
             this.slot1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.slot1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.slot1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.slot1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.slot1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.slot1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.slot1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.slot1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slot1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.slot1.Location = new System.Drawing.Point(2, 1);
             this.slot1.Name = "slot1";
             this.slot1.Size = new System.Drawing.Size(140, 140);
             this.slot1.TabIndex = 0;
-            this.slot1.Text = "1";
             this.slot1.UseVisualStyleBackColor = false;
             // 
             // text_screen
@@ -221,11 +221,13 @@ namespace Espeleta_Tic_Tac_Toe
             // 
             this.message.AutoSize = true;
             this.message.BackColor = System.Drawing.Color.Aquamarine;
-            this.message.Font = new System.Drawing.Font("Verdana", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.message.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.message.Location = new System.Drawing.Point(2, 21);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(0, 45);
+            this.message.Size = new System.Drawing.Size(525, 48);
             this.message.TabIndex = 0;
+            this.message.Text = "Press Start Game to Play";
+            this.message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // playerX
             // 

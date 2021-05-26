@@ -19,11 +19,38 @@ namespace Espeleta_Tic_Tac_Toe
 
         private void tic_tac_toe_Load(object sender, EventArgs e)
         {
+            foreach (Control slots in game_board.Controls)
+            {
+                if (slots is Button)
+                {
+                    slots.Click += new System.EventHandler(choose_slot);
+                }
+            }
+
         }
+        int playing = 0;
 
-        private void label1_Click(object sender, EventArgs e)
+        public void choose_slot(object sender, EventArgs e)
         {
+            Button press = (Button)sender;
+            if(press.Text.Equals(""))
+            {
 
+            }
+            if (playing % 2 == 0)
+            {
+                press.Text = "X";
+                message.Text = "Your Turn, Player O";
+                press.ForeColor = Color.Red;
+            }
+            else
+            {
+                press.Text = "O";
+                message.Text = "Your Turn, Player X";
+                press.ForeColor = Color.Green;
+
+            }
+            playing++;
+            }
         }
     }
-}
