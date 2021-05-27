@@ -13,7 +13,7 @@ namespace Espeleta_Tic_Tac_Toe
     public partial class tic_tac_toe : Form
     {
         public tic_tac_toe()
-
+        
         {
             InitializeComponent();
         }
@@ -57,6 +57,7 @@ namespace Espeleta_Tic_Tac_Toe
             playing++;
         }
         bool win = false;
+        int player_score;
         public void winner()
         {
             if (slot1.Text == "X" && slot2.Text == "X" && slot3.Text == "X")
@@ -65,6 +66,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot1, slot2, slot3);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot4.Text == "X" && slot5.Text == "X" && slot6.Text == "X")
             {
@@ -72,6 +75,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot4, slot5, slot6);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot7.Text == "X" && slot8.Text == "X" && slot9.Text == "X")
             {
@@ -79,6 +84,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot7, slot8, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot1.Text == "X" && slot4.Text == "X" && slot7.Text == "X")
             {
@@ -86,6 +93,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot1, slot4, slot7);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot2.Text == "X" && slot4.Text == "X" && slot8.Text == "X")
             {
@@ -93,6 +102,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot2, slot4, slot8);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot3.Text == "X" && slot6.Text == "X" && slot9.Text == "X")
             {
@@ -100,6 +111,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot3, slot6, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot1.Text == "X" && slot5.Text == "X" && slot9.Text == "X")
             {
@@ -107,6 +120,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot1, slot5, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot3.Text == "X" && slot5.Text == "X" && slot7.Text == "X")
             {
@@ -114,6 +129,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot3, slot5, slot7);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerX_score.Text);
+                playerX_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot1.Text == "O" && slot2.Text == "O" && slot3.Text == "O")
             {
@@ -121,6 +138,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player X";
                 player_win(slot1, slot2, slot3);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot4.Text == "O" && slot5.Text == "O" && slot6.Text == "O")
             {
@@ -128,6 +147,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot4, slot5, slot6);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot7.Text == "O" && slot8.Text == "O" && slot9.Text == "O")
             {
@@ -135,6 +156,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot7, slot8, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot1.Text == "O" && slot4.Text == "O" && slot7.Text == "O")
             {
@@ -142,6 +165,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot1, slot4, slot7);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot2.Text == "O" && slot4.Text == "O" && slot8.Text == "O")
             {
@@ -149,6 +174,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot2, slot4, slot8);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot3.Text == "O" && slot6.Text == "O" && slot9.Text == "O")
             {
@@ -156,6 +183,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot3, slot6, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot1.Text == "O" && slot5.Text == "O" && slot9.Text == "O")
             {
@@ -163,6 +192,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot1, slot5, slot9);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (slot3.Text == "O" && slot5.Text == "O" && slot7.Text == "O")
             {
@@ -170,6 +201,8 @@ namespace Espeleta_Tic_Tac_Toe
                 message.Text = "Congratulations Player O";
                 player_win(slot3, slot5, slot7);
                 game_board.Enabled = false;
+                player_score = int.Parse(playerO_score.Text);
+                playerO_score.Text = Convert.ToString(player_score + 1);
             }
             if (game_draw() == 9 && win == false)
             {
@@ -185,7 +218,6 @@ namespace Espeleta_Tic_Tac_Toe
                 if (slots is Button)
                 {
                     allTextButtonsLength += slots.Text.Length;
-
                 }
             }
             return allTextButtonsLength;
@@ -195,10 +227,6 @@ namespace Espeleta_Tic_Tac_Toe
             one.BackColor = Color.Aquamarine;
             two.BackColor = Color.Aquamarine;
             three.BackColor = Color.Aquamarine;
-
-            one.ForeColor = Color.White;
-            two.ForeColor = Color.White;
-            three.ForeColor = Color.White;
         }
     }
 }
