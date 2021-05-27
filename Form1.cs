@@ -13,11 +13,11 @@ namespace Espeleta_Tic_Tac_Toe
     public partial class tic_tac_toe : Form
     {
         public tic_tac_toe()
-        
-            {
-                InitializeComponent();
-            }
-        
+
+        {
+            InitializeComponent();
+        }
+
 
         private void tic_tac_toe_Load(object sender, EventArgs e)
         {
@@ -43,101 +43,162 @@ namespace Espeleta_Tic_Tac_Toe
             {
                 press.Text = "X";
                 message.Text = "Your Turn, Player O";
-                press.ForeColor = Color.Red;
+                press.Enabled = false;
                 winner();
             }
             else
             {
                 press.Text = "O";
                 message.Text = "Your Turn, Player X";
-                press.ForeColor = Color.Green;
+                press.Enabled = false;
                 winner();
+
             }
             playing++;
         }
         bool win = false;
         public void winner()
         {
-             if (slot1.Text == "X" && slot2.Text == "X" && slot3.Text == "X")
+            if (slot1.Text == "X" && slot2.Text == "X" && slot3.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot1, slot2, slot3);
+                game_board.Enabled = false;
             }
             if (slot4.Text == "X" && slot5.Text == "X" && slot6.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot4, slot5, slot6);
+                game_board.Enabled = false;
             }
             if (slot7.Text == "X" && slot8.Text == "X" && slot9.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot7, slot8, slot9);
+                game_board.Enabled = false;
             }
             if (slot1.Text == "X" && slot4.Text == "X" && slot7.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot1, slot4, slot7);
+                game_board.Enabled = false;
             }
             if (slot2.Text == "X" && slot4.Text == "X" && slot8.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot2, slot4, slot8);
+                game_board.Enabled = false;
             }
             if (slot3.Text == "X" && slot6.Text == "X" && slot9.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot3, slot6, slot9);
+                game_board.Enabled = false;
             }
             if (slot1.Text == "X" && slot5.Text == "X" && slot9.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot1, slot5, slot9);
+                game_board.Enabled = false;
             }
             if (slot3.Text == "X" && slot5.Text == "X" && slot7.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot3, slot5, slot7);
+                game_board.Enabled = false;
             }
             if (slot1.Text == "O" && slot2.Text == "O" && slot3.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
+                player_win(slot1, slot2, slot3);
+                game_board.Enabled = false;
             }
             if (slot4.Text == "O" && slot5.Text == "O" && slot6.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot4, slot5, slot6);
+                game_board.Enabled = false;
             }
             if (slot7.Text == "O" && slot8.Text == "O" && slot9.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot7, slot8, slot9);
+                game_board.Enabled = false;
             }
             if (slot1.Text == "O" && slot4.Text == "O" && slot7.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot1, slot4, slot7);
+                game_board.Enabled = false;
             }
             if (slot2.Text == "O" && slot4.Text == "O" && slot8.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot2, slot4, slot8);
+                game_board.Enabled = false;
             }
             if (slot3.Text == "O" && slot6.Text == "O" && slot9.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot3, slot6, slot9);
+                game_board.Enabled = false;
             }
             if (slot1.Text == "O" && slot5.Text == "O" && slot9.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot1, slot5, slot9);
+                game_board.Enabled = false;
             }
             if (slot3.Text == "O" && slot5.Text == "O" && slot7.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
+                player_win(slot3, slot5, slot7);
+                game_board.Enabled = false;
             }
+            if (game_draw() == 9 && win == false)
+            {
+                message.Text = "It is a Draw, No Winner";
+            }
+
+        }
+        public int game_draw()
+        {
+            int allTextButtonsLength = 0;
+            foreach (Control slots in game_board.Controls)
+            {
+                if (slots is Button)
+                {
+                    allTextButtonsLength += slots.Text.Length;
+
+                }
+            }
+            return allTextButtonsLength;
+        }
+        public void player_win(Button one, Button two, Button three)
+        {
+            one.BackColor = Color.Aquamarine;
+            two.BackColor = Color.Aquamarine;
+            three.BackColor = Color.Aquamarine;
+
+            one.ForeColor = Color.White;
+            two.ForeColor = Color.White;
+            three.ForeColor = Color.White;
         }
     }
 }
