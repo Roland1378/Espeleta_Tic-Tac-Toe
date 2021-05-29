@@ -42,15 +42,15 @@ namespace Espeleta_Tic_Tac_Toe
             this.slot1 = new System.Windows.Forms.Button();
             this.text_screen = new System.Windows.Forms.Panel();
             this.message = new System.Windows.Forms.Label();
-            this.playerX = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.playerX_score = new System.Windows.Forms.Label();
             this.playerO_score = new System.Windows.Forms.Label();
             this.new_game = new System.Windows.Forms.Button();
             this.next_match = new System.Windows.Forms.Button();
             this.close_program = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.start_game = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.game_board.SuspendLayout();
             this.text_screen.SuspendLayout();
             this.SuspendLayout();
@@ -214,7 +214,7 @@ namespace Espeleta_Tic_Tac_Toe
             this.text_screen.Font = new System.Drawing.Font("Verdana", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.text_screen.Location = new System.Drawing.Point(12, 12);
             this.text_screen.Name = "text_screen";
-            this.text_screen.Size = new System.Drawing.Size(627, 85);
+            this.text_screen.Size = new System.Drawing.Size(639, 85);
             this.text_screen.TabIndex = 1;
             // 
             // message
@@ -228,39 +228,6 @@ namespace Espeleta_Tic_Tac_Toe
             this.message.TabIndex = 0;
             this.message.Text = "Press Start Game to Play";
             this.message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // playerX
-            // 
-            this.playerX.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.playerX.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.playerX.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playerX.Location = new System.Drawing.Point(442, 149);
-            this.playerX.Name = "playerX";
-            this.playerX.Size = new System.Drawing.Size(208, 29);
-            this.playerX.TabIndex = 2;
-            this.playerX.Text = "PLAYER X:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(442, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 29);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "PLAYER SCORE";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(440, 184);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 29);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "PLAYER O:";
             // 
             // playerX_score
             // 
@@ -294,10 +261,11 @@ namespace Espeleta_Tic_Tac_Toe
             this.new_game.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.new_game.Location = new System.Drawing.Point(450, 254);
             this.new_game.Name = "new_game";
-            this.new_game.Size = new System.Drawing.Size(189, 76);
+            this.new_game.Size = new System.Drawing.Size(199, 76);
             this.new_game.TabIndex = 7;
             this.new_game.Text = "NEW GAME";
             this.new_game.UseVisualStyleBackColor = false;
+            this.new_game.Click += new System.EventHandler(this.new_game_Click);
             // 
             // next_match
             // 
@@ -307,10 +275,11 @@ namespace Espeleta_Tic_Tac_Toe
             this.next_match.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.next_match.Location = new System.Drawing.Point(450, 336);
             this.next_match.Name = "next_match";
-            this.next_match.Size = new System.Drawing.Size(189, 76);
+            this.next_match.Size = new System.Drawing.Size(200, 76);
             this.next_match.TabIndex = 8;
             this.next_match.Text = "NEXT MATCH";
             this.next_match.UseVisualStyleBackColor = false;
+            this.next_match.Click += new System.EventHandler(this.next_match_Click);
             // 
             // close_program
             // 
@@ -320,39 +289,69 @@ namespace Espeleta_Tic_Tac_Toe
             this.close_program.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.close_program.Location = new System.Drawing.Point(450, 418);
             this.close_program.Name = "close_program";
-            this.close_program.Size = new System.Drawing.Size(189, 76);
+            this.close_program.Size = new System.Drawing.Size(200, 76);
             this.close_program.TabIndex = 9;
             this.close_program.Text = "EXIT";
             this.close_program.UseVisualStyleBackColor = false;
+            this.close_program.Click += new System.EventHandler(this.close_program_Click);
             // 
-            // button1
+            // start_game
             // 
-            this.button1.BackColor = System.Drawing.Color.Aquamarine;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(450, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 76);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "START GAME";
-            this.button1.UseVisualStyleBackColor = false;
+            this.start_game.BackColor = System.Drawing.Color.Aquamarine;
+            this.start_game.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.start_game.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.start_game.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.start_game.Location = new System.Drawing.Point(450, 254);
+            this.start_game.Name = "start_game";
+            this.start_game.Size = new System.Drawing.Size(202, 76);
+            this.start_game.TabIndex = 10;
+            this.start_game.Text = "START GAME";
+            this.start_game.UseVisualStyleBackColor = false;
+            this.start_game.Click += new System.EventHandler(this.start_game_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Sitka Small", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(439, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 45);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "PLAYER SCORE";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(440, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 33);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "PLAYER X:";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(440, 182);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 33);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "PLAYER O:";
             // 
             // tic_tac_toe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(651, 544);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(663, 549);
+            this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.start_game);
             this.Controls.Add(this.close_program);
             this.Controls.Add(this.next_match);
             this.Controls.Add(this.new_game);
             this.Controls.Add(this.playerO_score);
             this.Controls.Add(this.playerX_score);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.playerX);
             this.Controls.Add(this.text_screen);
             this.Controls.Add(this.game_board);
             this.ForeColor = System.Drawing.Color.Black;
@@ -364,7 +363,6 @@ namespace Espeleta_Tic_Tac_Toe
             this.text_screen.ResumeLayout(false);
             this.text_screen.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -382,15 +380,15 @@ namespace Espeleta_Tic_Tac_Toe
         private System.Windows.Forms.Button slot1;
         private System.Windows.Forms.Panel text_screen;
         private System.Windows.Forms.Label message;
-        private System.Windows.Forms.TextBox playerX;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label playerX_score;
         private System.Windows.Forms.Label playerO_score;
         private System.Windows.Forms.Button new_game;
         private System.Windows.Forms.Button next_match;
         private System.Windows.Forms.Button close_program;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button start_game;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

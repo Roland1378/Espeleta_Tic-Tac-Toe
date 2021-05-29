@@ -13,7 +13,7 @@ namespace Espeleta_Tic_Tac_Toe
     public partial class tic_tac_toe : Form
     {
         public tic_tac_toe()
-        
+
         {
             InitializeComponent();
         }
@@ -21,14 +21,18 @@ namespace Espeleta_Tic_Tac_Toe
 
         private void tic_tac_toe_Load(object sender, EventArgs e)
         {
-            foreach (Control slots in game_board.Controls)
             {
-                if (slots is Button)
-                {
-                    slots.Click += new System.EventHandler(choose_slot);
-                }
-            }
+                game_board.Enabled = false;
 
+                foreach (Control slots in game_board.Controls)
+                {
+                    if (slots is Button)
+                    {
+                        slots.Click += new System.EventHandler(choose_slot);
+                    }
+                }
+
+            }
         }
         int playing = 0;
 
@@ -96,11 +100,11 @@ namespace Espeleta_Tic_Tac_Toe
                 player_score = int.Parse(playerX_score.Text);
                 playerX_score.Text = Convert.ToString(player_score + 1);
             }
-            if (slot2.Text == "X" && slot4.Text == "X" && slot8.Text == "X")
+            if (slot2.Text == "X" && slot5.Text == "X" && slot8.Text == "X")
             {
                 win = true;
                 message.Text = "Congratulations Player X";
-                player_win(slot2, slot4, slot8);
+                player_win(slot2, slot5, slot8);
                 game_board.Enabled = false;
                 player_score = int.Parse(playerX_score.Text);
                 playerX_score.Text = Convert.ToString(player_score + 1);
@@ -135,7 +139,7 @@ namespace Espeleta_Tic_Tac_Toe
             if (slot1.Text == "O" && slot2.Text == "O" && slot3.Text == "O")
             {
                 win = true;
-                message.Text = "Congratulations Player X";
+                message.Text = "Congratulations Player O";
                 player_win(slot1, slot2, slot3);
                 game_board.Enabled = false;
                 player_score = int.Parse(playerO_score.Text);
@@ -168,11 +172,11 @@ namespace Espeleta_Tic_Tac_Toe
                 player_score = int.Parse(playerO_score.Text);
                 playerO_score.Text = Convert.ToString(player_score + 1);
             }
-            if (slot2.Text == "O" && slot4.Text == "O" && slot8.Text == "O")
+            if (slot2.Text == "O" && slot5.Text == "O" && slot8.Text == "O")
             {
                 win = true;
                 message.Text = "Congratulations Player O";
-                player_win(slot2, slot4, slot8);
+                player_win(slot2, slot5, slot8);
                 game_board.Enabled = false;
                 player_score = int.Parse(playerO_score.Text);
                 playerO_score.Text = Convert.ToString(player_score + 1);
@@ -228,5 +232,50 @@ namespace Espeleta_Tic_Tac_Toe
             two.BackColor = Color.Aquamarine;
             three.BackColor = Color.Aquamarine;
         }
-    }
+        private void start_game_Click(object sender, EventArgs e)
+        {
+            game_board.Enabled = true;
+            message.Text = "Your Turn, Player X";
+            start_game.Visible = false;
+        }
+
+        private void new_game_Click(object sender, EventArgs e)
+        {
+            game_board.Enabled = true;
+            playing = 0;
+            win = false;
+            playerX_score.Text = "0";
+            playerO_score.Text = "0";
+            message.Text = "Your Turn, Player X";
+            foreach (Control slots in game_board.Controls)
+            {
+                if (slots is Button)
+                {
+                    slots.Enabled = true;
+                    slots.Text = "";
+                    slots.BackColor = Color.White;
+                }
+            }
+        }
+        private void next_match_Click(object sender, EventArgs e)
+        {
+            game_board.Enabled = true;
+            playing = 0;
+            win = false;
+            message.Text = "Your Turn, Player X";
+            foreach (Control slots in game_board.Controls)
+            {
+                if (slots is Button)
+                {
+                    slots.Enabled = true;
+                    slots.Text = "";
+                    slots.BackColor = Color.White;
+                }
+            }
+        }
+        private void close_program_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+    } 
 }
