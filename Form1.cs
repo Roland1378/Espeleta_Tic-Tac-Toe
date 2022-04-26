@@ -269,7 +269,7 @@ namespace Espeleta_Tic_Tac_Toe
                 {
                     slots.Enabled = true;
                     slots.Text = "";
-                    slots.BackColor = Color.White;
+                    slots.BackColor = Color.Black;
                 }
             }
         }

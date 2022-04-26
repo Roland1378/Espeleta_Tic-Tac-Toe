@@ -355,6 +355,7 @@ namespace Espeleta_Tic_Tac_Toe
             this.Controls.Add(this.text_screen);
             this.Controls.Add(this.game_board);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tic_tac_toe";
             this.Text = "TIC TAC TOE";
